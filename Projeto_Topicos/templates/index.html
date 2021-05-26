@@ -1,0 +1,39 @@
+<form action="/" method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="nome">Nome Completo</label>
+      <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu Nome">
+    </div>
+    <div class="form-group">
+      <label for="email">Email </label>
+      <input type="email" name="email" class="form-control" id="email" placeholder="exemplo@exemplo.com">
+    </div>
+    <div class="form-group">
+      <label for="skype">Skype</label>
+      <input type="text" class="form-control" name="skype" id="skype" placeholder="Seu Skype">
+    </div>
+
+    <div class="form-group">
+        <label for="idade">Idade</label>
+        <input type="text" class="form-control" name="idade" id="idade" placeholder="Sua Idade">
+      </div>
+
+      <div class="form-group">
+        <label for="horario">Melhor horário para contato</label>
+        <input type="text" class="form-control" name="horario" id="horario" placeholder="Melhor horário para contato">
+      </div>
+
+      <div class="form-group">
+        <label for="nickPs">Nick no Poker Stars</label>
+        <input type="text" class="form-control" name="nickPs" id="nickPs" placeholder="Seu nick no Poker Stars">
+      </div>
+
+
+
+ 
+
+
+
+    <input type="submit" class="btn btn-primary" value="Submit">
+  </form>
+  
