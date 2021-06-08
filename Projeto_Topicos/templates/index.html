@@ -1,5 +1,13 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+<center><div class="envelope">
+<h1>Formulário para cadastro em time de Poker</h1><br>
 <form action="/" method="POST">
     {% csrf_token %}
+    
     <div class="form-group">
       <label for="nome">Nome Completo</label>
       <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu Nome">
@@ -34,6 +42,41 @@
 
 
 
-    <input type="submit" class="btn btn-primary" value="Submit">
+    <br><br><input type="submit" class="btn btn-primary" value="Submit"><br><br>
   </form>
-  
+</div></center>
+  <style>
+
+    .envelope{
+      background-color: #fcba03; opacity: 0.8;
+      margin-top: 4%;
+      width:40%;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+    }
+    .form-group{
+      display:flex;
+      justify-content: space-around;
+      width:80%; 
+      margin-top: 4%;
+    }
+    input{
+      margin-left: 4%;
+      width:300px;
+    }
+    label{
+      width:350px;
+      text-align: left;
+    }
+
+  </style>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

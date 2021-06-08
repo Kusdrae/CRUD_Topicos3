@@ -23,5 +23,6 @@ admin.site.index_title = "Bem Vindo ao Painel Admin"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('cadastro.urls'))
+    path('', include('cadastro.urls')),
+    path('obrigado', include('cadastro.urls'))
 ]

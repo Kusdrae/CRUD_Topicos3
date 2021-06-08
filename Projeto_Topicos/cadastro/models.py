@@ -1,7 +1,6 @@
 from django.db import models
 
-# Create your models here. 
-# Note that I have used an uppercase letter for class name
+
 
 class Cadastro(models.Model):
     nome = models.CharField(max_length=122)
